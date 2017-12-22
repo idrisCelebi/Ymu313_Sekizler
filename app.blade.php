@@ -1,262 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <!-- Basic -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <title>Pet Sitesi</title>
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentelella Alela! | </title>
 
-    <!-- Web Fonts  -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="/backend/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/backend/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/backend/vendors/nprogress/nprogress.css" rel="stylesheet">
 
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/frontend/vendor/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="/frontend/vendor/fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" href="/frontend/vendor/owlcarousel/owl.carousel.min.css" media="screen">
-    <link rel="stylesheet" href="/frontend/vendor/owlcarousel/owl.theme.default.min.css" media="screen">
-    <link rel="stylesheet" href="/frontend/vendor/magnific-popup/magnific-popup.css" media="screen">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="/frontend/css/theme.css">
-    <link rel="stylesheet" href="/frontend/css/theme-elements.css">
-    <link rel="stylesheet" href="/frontend/css/theme-blog.css">
-    <link rel="stylesheet" href="/frontend/css/theme-shop.css">
-    <link rel="stylesheet" href="/frontend/css/theme-animate.css">
-
-    <!-- Current Page CSS -->
-    <link rel="stylesheet" href="/frontend/vendor/rs-plugin/css/settings.css" media="screen">
-    <link rel="stylesheet" href="/frontend/vendor/circle-flip-slideshow/css/component.css" media="screen">
-
-    <!-- Skin CSS -->
-    <link rel="stylesheet" href="/frontend/css/skins/default.css">
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="/frontend/css/custom.css">
-
-    <!-- Head Libs -->
-    <script src="/frontend/vendor/modernizr/modernizr.js"></script>
-
-    <!--[if IE]>
-    <link rel="stylesheet" href="/frontend/css/ie.css">
-    <![endif]-->
-
+    <!-- Custom Theme Style -->
+    <link href="/backend/build/css/custom.min.css" rel="stylesheet">
 
     @yield('css')
-
-    <!--[if lte IE 8]>
-    <script src="/frontend/vendor/respond/respond.js"></script>
-    <script src="/frontend/vendor/excanvas/excanvas.js"></script>
-    <![endif]-->
-
+/
 </head>
-<body>
 
-<div class="body">
-    <header id="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" src="img/logo.png">
-                </a>
-            </div>
-            <div class="search">
-                <form id="searchForm" action="page-search-results.html" method="get">
-                    <div class="input-group">
-                        <input type="text" class="form-control search" name="q" id="q" placeholder="Search..." required>
-                        <span class="input-group-btn">
-									<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-								</span>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Pet Sitesi</span></a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
                     </div>
-                </form>
+                    <div class="profile_info">
+                        <span>Welcome,</span>
+                        <h2>John Doe</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /menu profile quick info -->
+
+                <br />
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>General</h3>
+                        <ul class="nav side-menu">
+                            <li><a href="/admin/"><i class="fa fa-home"></i> Anasayfa </a></li>
+                            <li><a href="/admin/ayarlar"><i class="fa fa-cog"></i> Ayarlar </a></li>
+                            <li><a href="/admin/hakkimizda"><i class="fa fa-tree"></i> Hakkımızda </a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- /sidebar menu -->
+
+                <!-- /menu footer buttons -->
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- /menu footer buttons -->
             </div>
-            <nav>
-                <ul class="nav nav-pills nav-top">
-                    <li>
-                        <a href="about-us.html"><i class="fa fa-angle-right"></i>About Us</a>
-                    </li>
-                    <li>
-                        <a href="contact-us.html"><i class="fa fa-angle-right"></i>Contact Us</a>
-                    </li>
-                    <li class="phone">
-                        <span><i class="fa fa-phone"></i>(123) 456-7890</span>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
         </div>
-        <div class="navbar-collapse nav-main-collapse collapse">
-            <div class="container">
-                <ul class="social-icons">
-                    <li class="facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook">Facebook</a></li>
-                    <li class="twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter">Twitter</a></li>
-                    <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin">Linkedin</a></li>
-                </ul>
-                <nav class="nav-main mega-menu">
 
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
 
-                    <ul class="nav nav-pills nav-main" id="mainMenu">
-                        <li>
-                            <a href="/">Anasayfa</a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/img.jpg" alt="">John Doe
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="javascript:;"> Profile</a></li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:;">Help</a></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="/hakkimizda">Hakkımızda</a>
-                        </li>
-                        <li>
-                            <a href="/iletisim">Bize Ulaşın</a>
+
+                        <li role="presentation" class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge bg-green">6</span>
+                            </a>
+                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="text-center">
+                                        <a>
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>
+        <!-- /top navigation -->
 
 
-
-    @yield('icerik')
-
+@yield('icerik')
 
 
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-ribbon">
-                    <span>Get in Touch</span>
-                </div>
-                <div class="col-md-3">
-                    <div class="newsletter">
-                        <h4>Newsletter</h4>
-                        <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
-
-                        <div class="alert alert-success hidden" id="newsletterSuccess">
-                            <strong>Success!</strong> You've been added to our email list.
-                        </div>
-
-                        <div class="alert alert-danger hidden" id="newsletterError"></div>
-
-                        <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
-                            <div class="input-group">
-                                <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
-                                <span class="input-group-btn">
-											<button class="btn btn-default" type="submit">Go!</button>
-										</span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h4>Latest Tweets</h4>
-                    <div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
-                        <p>Please wait...</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-details">
-                        <h4>Contact Us</h4>
-                        <ul class="contact">
-                            <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
-                            <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</p></li>
-                            <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <ul class="social-icons">
-                            <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
-                            <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
-                            <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1">
-                        <a href="index.html" class="logo">
-                            <img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
-                        </a>
-                    </div>
-                    <div class="col-md-7">
-                        <p>© Copyright 2015. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <nav id="sub-menu">
-                            <ul>
-                                <li><a href="page-faq.html">FAQ's</a></li>
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
 </div>
 
-<!-- Vendor -->
-<script src="/frontend/vendor/jquery/jquery.js"></script>
-<script src="/frontend/vendor/jquery.appear/jquery.appear.js"></script>
-<script src="/frontend/vendor/jquery.easing/jquery.easing.js"></script>
-<script src="/frontend/vendor/jquery-cookie/jquery-cookie.js"></script>
-<script src="/frontend/vendor/bootstrap/bootstrap.js"></script>
-<script src="/frontend/vendor/common/common.js"></script>
-<script src="/frontend/vendor/jquery.validation/jquery.validation.js"></script>
-<script src="/frontend/vendor/jquery.stellar/jquery.stellar.js"></script>
-<script src="/frontend/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
-<script src="/frontend/vendor/jquery.gmap/jquery.gmap.js"></script>
-<script src="/frontend/vendor/isotope/jquery.isotope.js"></script>
-<script src="/frontend/vendor/owlcarousel/owl.carousel.js"></script>
-<script src="/frontend/vendor/jflickrfeed/jflickrfeed.js"></script>
-<script src="/frontend/vendor/magnific-popup/jquery.magnific-popup.js"></script>
-<script src="/frontend/vendor/vide/vide.js"></script>
+<!-- jQuery -->
+<script src="/backend/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="/backend/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="/backend/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="/backend/vendors/nprogress/nprogress.js"></script>
 
-<!-- Theme Base, Components and Settings -->
-<script src="/frontend/js/theme.js"></script>
-
-<!-- Specific Page Vendor and Views -->
-<script src="/frontend/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script src="/frontend/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script src="/frontend/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
-<script src="/frontend/js/views/view.home.js"></script>
-
-<!-- Theme Custom -->
-<script src="/frontend/js/custom.js"></script>
-
-<!-- Theme Initialization Files -->
-<script src="/frontend/js/theme.init.js"></script>
-
+<!-- Custom Theme Scripts -->
+<script src="/backend/build/js/custom.min.js"></script>
 
 @yield('js')
-
-
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-12345678-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
- -->
-
 </body>
 </html>
